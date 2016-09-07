@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  pictureViewController.h
 //  ImageBrowser
 //
 //  Created by 蜗牛 on 16/9/7.
@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define kScreenWidth    [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight   [UIScreen mainScreen].bounds.size.height
-
-@interface ViewController : UIViewController
-
+@interface pictureViewController : UIViewController
+@property (nonatomic) NSInteger  selectInteger;
+@property (nonatomic,strong) NSArray * imageArray;
 @end

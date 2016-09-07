@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  pictureViewCell.h
 //  ImageBrowser
 //
 //  Created by 蜗牛 on 16/9/7.
@@ -8,9 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-#define kScreenWidth    [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight   [UIScreen mainScreen].bounds.size.height
+@interface pictureViewCell : UICollectionViewCell<UIScrollViewDelegate>
 
-@interface ViewController : UIViewController
+// 图片的url地址
+@property (nonatomic,strong) NSString *imageUrlString ;
+// 视图
+@property (nonatomic,strong) UIImageView *imageView ;
+
+@property (nonatomic,strong) UIScrollView *scrollView ;
 
 @end
